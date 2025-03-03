@@ -23,6 +23,10 @@ jobs:
 
           # Start VoiceOver
           /System/Library/CoreServices/VoiceOver.app/Contents/MacOS/VoiceOverStarter &
+          
+          # path check
+          ls -l ~/Library/Group\ Containers/group.com.apple.VoiceOver/Library/Preferences/com.apple.VoiceOver4/
+
 
           # See if VoiceOver process is running
           ps aux | egrep "[V]oiceOver"
